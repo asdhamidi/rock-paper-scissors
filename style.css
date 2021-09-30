@@ -1,0 +1,96 @@
+h1, h2, h3, h4, h5, h6, p, li, span {
+    color: #E5E7EB;
+    display: inline-block;
+    margin: 10px;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #1f2937;
+    margin: 0%;
+}
+
+header {
+    background-color: #393e46;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    border-bottom: 5px groove blueviolet;
+}
+main {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.buttons {
+    background-color: #E5E7EB;
+    border-radius: 10px;
+    padding: 10px;
+    width: 200px;
+    height: auto;
+    margin: 15px;
+    transition: all 100ms ease;
+    box-sizing: border-box;
+}
+
+.buttons:hover {
+    box-shadow: 0px 0px 20px gray;
+}
+.choice {
+    background-color: transparent;
+    width: 100px;
+}
+
+
+.buttons:active {
+    transform: scale(0.9);
+    border: 2px solid black;
+    box-shadow: none;
+}
+.scoreboard {
+    width: 25%;
+    margin: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.scoreboard div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.restart {
+    height: 300px;
+    width: 100%;
+    top: 25%;
+    background-color: rgba(0,0,0,0.2);
+    backdrop-filter: blur(10px);
+    border: 1px groove rgba(0,0,0,1);
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+    white-space: pre;
+    text-align: center;
+}
+
+#restartbtn {
+    transition: all 500ms ease;
+    margin: 15px;
+}
+
+#restartbtn:hover {
+    transform: scale(1.1);
+    filter: invert(16%) sepia(74%) saturate(5746%) hue-rotate(270deg) brightness(95%) contrast(88%);
+}
