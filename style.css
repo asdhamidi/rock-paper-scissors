@@ -1,29 +1,9 @@
-@media only screen and (max-width: 550px)  {
-    header {
-        width: 100%;
-    }
-
-    .scoreboard, .msg-board h1{
-        font-size: 25px;
-    }
-    
-    .scoreboard {
-        margin: 2px;
-    }
-
-    main {
-        transform: scale(0.5);
-    }
-
-    .restart {
-        font-size: 10px;
-    }
-}
 
 h1, h2, h3, h4, h5, h6, p, li, span {
     color: #E5E7EB;
     display: inline-block;
     margin: 10px;
+    font-size: 35px
 }
 html,body, main{
     overflow-x: hidden;
@@ -40,15 +20,18 @@ body {
 
 header {
     background-color: #393e46;
+    width: 100%;
     text-align: center;
     padding: 10px;
     border-bottom: 5px groove blueviolet;
+    transition: all 300ms ease-in;
 }
 main {
     flex: 1;
     display: flex;
     align-items: center;
     justify-content: center;
+    transition: all 300ms ease-in;
 }
 .msg-board {
     display: flex;
@@ -82,11 +65,11 @@ main {
     box-shadow: none;
 }
 .scoreboard {
-    margin-top: 50px;
     display: flex;
     flex-direction: row;
     justify-content: center;
     text-align: center;
+    transition: all 300ms ease-in;
 }
 
 .scoreboard div {
@@ -120,4 +103,33 @@ main {
 #restartbtn:hover {
     transform: scale(1.1);
     filter: invert(16%) sepia(74%) saturate(5746%) hue-rotate(270deg) brightness(95%) contrast(88%);
+}
+
+@media only screen and (max-width: 680px)  {
+    .scoreboard, .msg-board h1,  h1{
+        font-size: 25px;
+    }
+    
+    .scoreboard {
+        margin: 2px;
+    }
+
+    main {
+        transform: scale(0.7);
+    }
+
+    .restart {
+        width: 100%;
+        z-index: 2;
+    }
+}
+
+@media screen and (max-width:475px){
+    main {
+        transform: scale(0.5);
+    }
+
+    .scoreboard {
+        margin: 5px;
+    }
 }
