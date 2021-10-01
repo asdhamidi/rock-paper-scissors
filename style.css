@@ -1,9 +1,33 @@
+@media only screen and (max-width: 550px)  {
+    header {
+        width: 100%;
+    }
+
+    .scoreboard, .msg-board h1{
+        font-size: 25px;
+    }
+    
+    .scoreboard {
+        margin: 2px;
+    }
+
+    main {
+        transform: scale(0.5);
+    }
+
+    .restart {
+        font-size: 10px;
+    }
+}
+
 h1, h2, h3, h4, h5, h6, p, li, span {
     color: #E5E7EB;
     display: inline-block;
     margin: 10px;
 }
-
+html,body, main{
+    overflow-x: hidden;
+}
 body {
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     display: flex;
@@ -16,9 +40,7 @@ body {
 
 header {
     background-color: #393e46;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    text-align: center;
     padding: 10px;
     border-bottom: 5px groove blueviolet;
 }
@@ -28,7 +50,12 @@ main {
     align-items: center;
     justify-content: center;
 }
-
+.msg-board {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
 .buttons {
     background-color: #E5E7EB;
     border-radius: 10px;
@@ -55,18 +82,18 @@ main {
     box-shadow: none;
 }
 .scoreboard {
-    width: 25%;
-    margin: 50px;
+    margin-top: 50px;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
+    text-align: center;
 }
 
 .scoreboard div {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
 }
 
 .restart {
